@@ -1,19 +1,19 @@
 [app]
 
 # (str) Title of your application
-title = onepiece
+title = YOLOv5 App
 
 # (str) Package name
-package.name = boahancock
+package.name = yolo_app
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = org.example
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,png,jpg,kv,atlas,pt
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.10.12,kivy==1.9.1,pillow,hostpython==3.10.12
+requirements = kivy, pillow, numpy, opencv-python-headless, torch, git+https://github.com/ultralytics/yolov5.git, python3
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
